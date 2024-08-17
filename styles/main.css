@@ -1,15 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
   padding: 20px;
-  box-sizing: border-box;
   background-color: #f0f0f0;
   color: #333;
 }
 
 .blog {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -19,6 +23,7 @@ body {
   font-size: 1.8rem;
   margin-bottom: 10px;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .blog__description {
@@ -34,6 +39,7 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .blog__link:hover {
@@ -45,9 +51,16 @@ body {
   margin-bottom: 20px;
 }
 
+.image__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
 .image__img {
   width: 100%;
-  max-width: 540px;
+  max-width: 525px;
   height: auto;
   border-radius: 25px;
   margin-bottom: 10px;
@@ -59,6 +72,7 @@ body {
   color: #007acc;
   text-decoration: none;
   font-weight: bold;
+  transition: text-decoration 0.3s ease;
 }
 
 .image__link:hover {
@@ -67,7 +81,7 @@ body {
 
 .trivia {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
@@ -76,6 +90,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 .trivia__list {
@@ -93,6 +108,7 @@ body {
   }
 
   .blog__title,
+  .image__title,
   .trivia__title {
     font-size: 1.4rem;
   }
@@ -104,5 +120,18 @@ body {
 
   .image__img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog__title,
+  .image__title,
+  .trivia__title {
+    font-size: 1.2rem;
+  }
+
+  .blog__description,
+  .trivia__item {
+    font-size: 0.85rem;
   }
 }
