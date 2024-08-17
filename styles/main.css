@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.blog {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.blog__title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.blog__description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.blog__link {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.blog__link:hover {
+  background-color: #005fa3;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image__img {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.image__link {
+  display: block;
+  font-size: 1rem;
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.image__link:hover {
+  text-decoration: underline;
+}
+
+.trivia {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.trivia__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trivia__list {
+  padding-left: 20px;
+}
+
+.trivia__item {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .blog__title,
+  .trivia__title {
+    font-size: 1.4rem;
+  }
+
+  .blog__description,
+  .trivia__item {
+    font-size: 0.9rem;
+  }
+
+  .image__img {
+    max-width: 100%;
+  }
+}
